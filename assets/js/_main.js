@@ -22,7 +22,8 @@ function determineComputedTheme() {
   if (themeSetting != "system") {
     return themeSetting;
   }
-  return browserPref ? "dark" : "light";
+  // Default to dark mode when the visitor hasn't chosen one
+  return "dark";
 }
 
 // Set the theme on page load or when explicitly called. Without an argument the
@@ -151,12 +152,12 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // If the user hasn't chosen a theme, follow the OS preference
+  // Apply the current theme (defaults to dark until the visitor toggles)
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
+        .addEventListener("change", () => {
           if (!localStorage.getItem("theme")) {
-            setTheme(e.matches ? "dark" : "light");
+            setTheme();
           }
         });
 
