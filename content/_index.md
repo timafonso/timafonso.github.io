@@ -42,11 +42,11 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I'm a PhD candidate in Computer Science at the University of Lisbon (INESC-ID / Instituto Superior Técnico), where I work on **automating the formal verification of software systems**.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My current focus is **Agentic Theorem Proving** — using language models and machine learning to drive interactive theorem provers such as [LEAN](https://leanprover.github.io/), so that correctness proofs about software can be found with far less manual effort. I'm also interested in explainable AI and learning-based fault localization.
 
-        Please reach out to collaborate 😃
+        Please reach out if you'd like to collaborate 😃
     design:
       columns: '1'
   - block: collection
