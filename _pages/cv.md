@@ -21,7 +21,7 @@ Experience
 ======
 * Visiting Student, Carnegie Mellon University (Sep–Dec 2024)
   * Worked on solutions for learning-based fault localization on Python codebases.
-* Backend Engineer Intern, Sky
+* Backend Engineer Intern, Sky (Aug–Oct 2022)
   * Developed a tool for automated project template generation, including the infrastructure-as-code files needed for testing and deployment.
 
 Research interests
