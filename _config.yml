@@ -23,7 +23,7 @@ repository               : "timafonso/timafonso.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Martim Afonso"
   pronouns         : "he/him"
   bio              : "PhD candidate in Computer Science — automating the formal verification of software through Agentic Theorem Proving."
