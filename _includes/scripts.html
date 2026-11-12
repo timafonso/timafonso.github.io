@@ -1,7 +1,8 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
 <script>
-  // Copy a publication's BibTeX entry to the clipboard (works without the bundled JS)
+  /* Copy a publication's BibTeX entry to the clipboard (works without the bundled JS). */
+  /* Note: only block comments here — this file is flattened to one line by HTML compression, which would turn line comments into a comment over the whole script. */
   function copyBibtex(btn) {
     var text = btn.getAttribute('data-bibtex') || '';
     function flash() {
