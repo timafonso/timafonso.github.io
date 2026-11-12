@@ -49,10 +49,11 @@ layout: default
 
         {% include /components/citations.html
             citation=page.citation
+            bibtex=page.bibtex
             paperurl=page.paperurl
             slidesurl=page.slidesurl
             bibtexurl=page.bibtexurl
-        %}         
+        %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

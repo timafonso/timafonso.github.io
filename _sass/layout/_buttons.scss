@@ -34,6 +34,15 @@
     margin-left: -0.5em; /* override for hidden text*/
   }
 
+  /* compact inline button for copying BibTeX next to a citation */
+
+  &--bibtex {
+    margin-left: 0.5em;
+    padding: 0.2em 0.6em;
+    font-size: $type-size-7;
+    vertical-align: middle;
+  }
+
   /* fills width of parent container */
 
   &--block {

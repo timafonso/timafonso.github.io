@@ -1,6 +1,12 @@
+<!-- Capture a literal newline so we can preserve BibTeX line breaks through HTML compression -->
+{% capture _nl %}
+{% endcapture %}
+
 <!-- Render the citation if supplied -->
 {% if include.citation %}
-Recommended citation: {{ include.citation }}<br />
+<p class="publication-citation" itemprop="description">{{ include.citation }}
+{% if include.bibtex %}{% assign _bib = include.bibtex | escape | replace: _nl, '&#10;' %}<button type="button" class="btn btn--bibtex" data-bibtex="{{ _bib }}" onclick="copyBibtex(this)">Copy BibTeX</button>{% endif %}
+</p>
 {% endif %}
 <!-- Create the variable so it exists in the event there is no citation -->
 {% assign block = "" %}

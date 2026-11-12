@@ -1,5 +1,30 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  // Copy a publication's BibTeX entry to the clipboard (works without the bundled JS)
+  function copyBibtex(btn) {
+    var text = btn.getAttribute('data-bibtex') || '';
+    function flash() {
+      if (!btn.dataset.label) { btn.dataset.label = btn.textContent; }
+      btn.textContent = 'Copied!';
+      setTimeout(function () { btn.textContent = btn.dataset.label; }, 1500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(flash, function () { fallbackCopyBibtex(text); flash(); });
+    } else {
+      fallbackCopyBibtex(text); flash();
+    }
+  }
+  function fallbackCopyBibtex(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'absolute'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+</script>
+
 {% include analytics.html %}
 
 {% include comments-providers/scripts.html %}

@@ -8,6 +8,13 @@ date: 2026-10-30
 venue: 'arXiv preprint arXiv:2611.00287'
 paperurl: 'https://arxiv.org/abs/2611.00287'
 citation: 'Ribeiro, P., Afonso, M., Vasconcelos, A., &amp; Ferreira, J. F. (2026). &quot;VerusWeave: A Benchmark for Proof Repair in Concurrent Verus Programs.&quot; <i>arXiv preprint arXiv:2611.00287</i>.'
+bibtex: |
+  @article{ribeiro2026verusweave,
+    title   = {VerusWeave: A Benchmark for Proof Repair in Concurrent Verus Programs},
+    author  = {Ribeiro, Pedro and Afonso, Martim and Vasconcelos, André and Ferreira, João F.},
+    journal = {arXiv preprint arXiv:2611.00287},
+    year    = {2026}
+  }
 ---
 
 **Authors:** Pedro Ribeiro, Martim Afonso, André Vasconcelos, João F. Ferreira
